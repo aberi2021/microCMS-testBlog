@@ -11,6 +11,13 @@
   margin-bottom: 40px;
 }
 
+.textLink {
+  text-decoration: underline;
+  &:hover {
+    color: rgb(219, 4, 158);
+  }
+}
+
 .post {
   & > h1 {
     font-size: 30px;
@@ -36,5 +43,9 @@
   & > ol {
     list-style-type: decimal;
     list-style-position: inside;
+  }
+  img {
+    width: 50%;
+    height: auto;
   }
 }

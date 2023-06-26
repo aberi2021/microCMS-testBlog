@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { client } from "../libs/client";
+import style from "../styles/Home.module.scss";
 
 export default function Home({ blog }) {
   return (
@@ -9,7 +10,9 @@ export default function Home({ blog }) {
       <ul>
         {blog.map((blog) => (
           <li key={blog.id}>
-            <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
+            <Link href={`/blog/${blog.id}`} className={style.textLink}>
+              {blog.title}
+            </Link>
           </li>
         ))}
       </ul>
