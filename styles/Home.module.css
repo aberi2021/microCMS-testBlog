@@ -18,6 +18,14 @@
   color: rgb(219, 4, 158);
 }
 
+.backToHomeButton {
+  color: rgb(219, 4, 158);
+  text-decoration: underline;
+}
+.backToHomeButton:hover {
+  color: #666;
+}
+
 .post > h1 {
   font-size: 30px;
   font-weight: bold;

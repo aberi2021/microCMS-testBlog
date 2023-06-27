@@ -15,7 +15,7 @@ export default function BlogId({ blog }) {
         }}
         className={styles.post}
       />
-      <Link href="/" className={styles.textLink}>
+      <Link href="/" className={styles.backToHomeButton}>
         ホームへ戻る
       </Link>
     </main>

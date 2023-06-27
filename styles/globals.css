@@ -98,6 +98,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding-left: 2rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
