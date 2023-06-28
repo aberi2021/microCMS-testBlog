@@ -2,6 +2,7 @@
 import { client } from "../../libs/client";
 import styles from "../../styles/Home.module.scss";
 import Link from "next/link";
+import { Footer } from "@/components/Footer";
 
 export default function BlogId({ blog }) {
   return (
@@ -15,9 +16,7 @@ export default function BlogId({ blog }) {
         }}
         className={styles.post}
       />
-      <Link href="/" className={styles.backToHomeButton}>
-        ホームへ戻る
-      </Link>
+      <Footer />
     </main>
   );
 }

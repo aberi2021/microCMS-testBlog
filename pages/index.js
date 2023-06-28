@@ -8,7 +8,7 @@ import { Footer } from "../components/Footer";
 
 export default function Home({ blog, category, totalCount }) {
   return (
-    <>
+    <div>
       <h1>あべりのmicroCMS勉強サイト</h1>
       <section className={style.sectionMd}>
         <h2>カテゴリー一覧</h2>
@@ -33,10 +33,10 @@ export default function Home({ blog, category, totalCount }) {
         <div className={style.Pagination}>
           <p>ページネーションだよ</p>
           <Pagination totalCount={totalCount} className={style.textLink} />
-          {/* <Footer totalCount={totalCount} /> */}
+          <Footer home />
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

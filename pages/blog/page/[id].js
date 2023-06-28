@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Pagination } from "../../../components/Pagination";
 import { client } from "../../../libs/client";
 import style from "../../../styles/Home.module.scss";
+import { Footer } from "@/components/Footer";
 
 const PER_PAGE = 5;
 
@@ -21,9 +22,7 @@ export default function BlogPageId({ blog, totalCount }) {
       </ul>
       <p>以下はページネーションだよ</p>
       <Pagination totalCount={totalCount} className={style.textLink} />
-      <Link href="/" className={style.backToHomeButton}>
-        ホームへ戻る
-      </Link>
+      <Footer />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { client } from "../../libs/client";
 import style from "../../styles/Home.module.scss";
+import { Footer } from "@/components/Footer";
 
 export default function CategoryId({ blog }) {
   // カテゴリーに紐付いたコンテンツがない場合に表示
@@ -12,6 +13,7 @@ export default function CategoryId({ blog }) {
         <Link href="/" className={style.backToHomeButton}>
           ホームへ戻る
         </Link>
+        <Footer />
       </div>
     );
   }
@@ -28,9 +30,7 @@ export default function CategoryId({ blog }) {
           </li>
         ))}
       </ul>
-      <Link href="/" className={style.backToHomeButton}>
-        ホームへ戻る
-      </Link>
+      <Footer />
     </div>
   );
 }
